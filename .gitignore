@@ -4,8 +4,7 @@
 # Ignore the node_modules directory (used for Node.js projects)
 node_modules/
 
-# Ignore the README.md file to avoid conflicts if modified during the assignment
-README.md
+
 
 # Ignore any temporary files or directories
 *.tmp       # Temporary files with .tmp extension
