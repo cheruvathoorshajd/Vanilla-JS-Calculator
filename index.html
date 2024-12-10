@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- The document type declaration indicates that this is an HTML5 document -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- The charset attribute specifies the character encoding for the document (UTF-8 is a common standard) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The viewport meta tag ensures that the page is responsive and scales correctly on mobile devices 
+         by setting the width to the device's width and the initial zoom level to 1.0 (100%) -->
+
+    <title>Vanilla Javascript Calculator</title>
+    <!-- The title tag sets the title of the web page, which appears in the browser tab -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- This link element includes an external CSS file named "style.css", which contains styles for the application.
+         This stylesheet controls the visual appearance of the page and its elements -->
+</head>
+<body>
+    <!-- The body section contains the main content that will be displayed on the web page -->
+
+    <div id="first-page" class="page">
+        <!-- This div serves as the first page of the application, containing an introduction to the assignment -->
+        <div class="container">
+            <!-- A container div to encapsulate the content for better styling and layout management -->
+            <h1>Vanilla Javascript Calculator</h1>
+            <!-- Main heading for the page, indicating the title of the assignment -->
+
+            <p>
+                This assignment involves creating a simple calculator using HTML, CSS, and JavaScript with the Canvas API. 
+                It supports basic operations (+, -, *, /, %, parentheses), expression evaluation, backspace functionality, and error handling for invalid expressions. 
+                The project focuses on rendering with the Canvas API and does not use external frameworks. 
+                The user interface is fully rendered on a canvas element, demonstrating advanced graphics programming techniques.
+            </p>
+            <!-- A paragraph explaining the objectives and details of the assignment -->
+
+            <button id="go-to-calculator">Go to Calculator</button>
+            <!-- A button that will allow users to navigate from the introduction page to the calculator page -->
+        </div>
+    </div>
+
+    <div id="calculator-page" class="page" style="display: none;">
+        <!-- This div contains the calculator interface and is initially hidden from view -->
+        <canvas id="calculator"></canvas>
+        <!-- The canvas element is where the calculator's graphical interface is rendered -->
+        
+        <button id="go-back">Go Back</button>
+        <!-- A button to return to the first page from the calculator page -->
+    </div>
+
+    <script src="script.js"></script>
+    <!-- This script element includes an external JavaScript file named "script.js", which contains the logic for 
+         the calculator's functionality and interaction, as well as event handling -->
+</body>
+</html>
